@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "http-server": "^14.1.1",
     "ionic": "^5.4.16",
     "ionicons": "^6.0.3",
     "node": "^18.10.0",
@@ -43,8 +44,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "ionic serve",
-    "build": "react-scripts build",
+    "start": "http-server build --proxy https://localhost:8080?",
+    "build": "ionic build --prod",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
     "eject": "react-scripts eject"
   },

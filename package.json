@@ -44,7 +44,7 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "http-server build --proxy https://localhost:8080?",
+    "start": "http-server build --proxy https://heroku-bmi-react.herokuapp.com?",
     "build": "ionic build --prod",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
     "eject": "react-scripts eject"
